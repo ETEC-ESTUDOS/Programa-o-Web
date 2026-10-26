@@ -1,0 +1,55 @@
+<svg viewBox="0 0 160 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trackGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#FFE3AE"/>
+      <stop offset="55%" stop-color="#D9CFF0"/>
+      <stop offset="100%" stop-color="#2E2A4F"/>
+    </linearGradient>
+    <radialGradient id="sunGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD27A"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </radialGradient>
+    <filter id="thumbShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#2E2A4F" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- trilho da chave -->
+  <rect x="4" y="4" width="152" height="64" rx="32" fill="url(#trackGrad)"/>
+  <rect x="4" y="4" width="152" height="64" rx="32" fill="none" stroke="#2E2A4F" stroke-opacity="0.08" stroke-width="2"/>
+
+  <!-- ícone lua (fixo à direita do trilho) -->
+  <g transform="translate(112,20) scale(0.5)">
+    <g fill="#F7F3E9">
+      <circle cx="12" cy="10" r="1.6"/>
+      <circle cx="46" cy="8" r="1.2"/>
+    </g>
+    <mask id="crescentMaskMini">
+      <rect x="0" y="0" width="64" height="64" fill="white"/>
+      <circle cx="26" cy="26" r="15" fill="black"/>
+    </mask>
+    <circle cx="34" cy="32" r="16" fill="#F7F3E9" mask="url(#crescentMaskMini)"/>
+  </g>
+
+  <!-- ícone sol (fixo à esquerda do trilho, esmaecido pois o thumb está por cima) -->
+  <g transform="translate(20,20) scale(0.5)" opacity="0.9">
+    <g stroke="#B8720F" stroke-width="4" stroke-linecap="round">
+      <line x1="32" y1="2"  x2="32" y2="12"/>
+      <line x1="13.5" y1="13.5" x2="19" y2="19"/>
+    </g>
+  </g>
+
+  <!-- thumb (estado atual: tema claro) -->
+  <circle cx="36" cy="36" r="26" fill="url(#sunGlow2)" filter="url(#thumbShadow)"/>
+  <g stroke="#E8901A" stroke-width="2.6" stroke-linecap="round">
+    <line x1="36" y1="14" x2="36" y2="20"/>
+    <line x1="36" y1="52" x2="36" y2="58"/>
+    <line x1="14" y1="36" x2="20" y2="36"/>
+    <line x1="52" y1="36" x2="58" y2="36"/>
+    <line x1="20.7" y1="20.7" x2="24.8" y2="24.8"/>
+    <line x1="47.2" y1="47.2" x2="51.3" y2="51.3"/>
+    <line x1="20.7" y1="51.3" x2="24.8" y2="47.2"/>
+    <line x1="47.2" y1="24.8" x2="51.3" y2="20.7"/>
+  </g>
+  <circle cx="36" cy="36" r="12" fill="#FFD27A" stroke="#E8901A" stroke-width="1.5"/>
+</svg>

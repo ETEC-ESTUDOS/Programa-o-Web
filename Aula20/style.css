@@ -1,0 +1,191 @@
+@keyframes moverParaDireita { from{ left: 0%; } to{ left: 75%; } }
+@keyframes moverParaEsquerda { from{ left: 75%; } to{ left: 0%; } }
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header.titulo {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 20px 30px;
+    text-align: center;
+  }
+
+  h1.titulo {
+    font-size: 2rem;
+    margin: 0 0 15px;
+    color: #1a1a1a;
+  }
+
+  header.titulo h2 {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 0;
+  }
+
+  #escTema{
+    margin: 10px;
+    position: relative;
+    background: linear-gradient(270deg,#ffe3ae,#2e2a4f);
+    border-radius: 30px;
+    width: 300px;
+    height: 75px;
+    overflow: hidden;
+  }
+
+  #escTema img{
+    position: absolute;
+    left:75%;
+    height: 70px;
+    cursor:pointer;
+  }
+
+  .games {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 20px 100px;
+  }
+
+  .card {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin-top: -25px;
+    width: 82%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:first-child {
+    margin-top: 0;
+  }
+  /*O nth-child() selciona os elementos diacordo com sua posição numericana lista de filhos de um elemento pai*/
+  /* alternando posição para a esquerda e para a direita, com sobreposição no meio */
+  .card:nth-child(1)  { z-index: 1;  left: 0%; }
+  .card:nth-child(2)  { z-index: 2;  left: 12%;}
+  .card:nth-child(3)  { z-index: 3;  left: -8%;}
+  .card:nth-child(4)  { z-index: 4;  left: 10%;}
+  .card:nth-child(5)  { z-index: 5;  left: -5%;}
+  .card:nth-child(6)  { z-index: 6;  left: 14%;}
+  .card:nth-child(7)  { z-index: 7;  left: -3%;}
+  .card:nth-child(8)  { z-index: 8;  left: 8%;}
+  .card:nth-child(9)  { z-index: 9;  left: -7%;}
+  .card:nth-child(10) { z-index: 10; left: 3%;}
+
+  .card:hover,
+  .card.is-open {
+    z-index: 20;
+    transform: rotate(0deg);
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .card .thumb {
+    flex: 0 0 auto;
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .card img {
+    display: none;
+  }
+
+  .num {
+    display: block;
+    font-size: 0.7rem;
+    color: #888;
+  }
+
+  .card h3 {
+    margin: 2px 0 2px;
+    font-size: 1rem;
+    color: #111;
+  }
+
+  .card .light{
+    margin: 2px 0 2px;
+    font-size: 1rem;
+    color: #111;
+  }
+
+  .card .dark{
+    margin: 2px 0 2px;
+    font-size: 1rem;
+    color:#eeeeee
+  }
+
+  .genre {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .infoGame {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+  }
+
+  .card:hover .infoGame,
+  .card.is-open .infoGame {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 10px;
+  }
+
+  .infoGame h4 {
+    margin: 8px 0 3px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #444;
+  }
+
+  .infoGame p {
+    margin: 0 0 4px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.8rem;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: 560px) {
+    .card {
+      width: 100%;
+    }
+  }

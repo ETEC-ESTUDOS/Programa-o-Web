@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario para MEI</title>
+  </head>
+  <body bgcolor="black" style="font-family: Arial;color: #8f8f8f;">
+    <h1 align="center">Formulario para MEI - Microempreendedor Individual</h1>
+    <form action="" method="post" color="red" autocomplete="on">
+      <fieldset width="500" style="margin: 1rem auto;font-size:18px;">
+        <legend>Dados Pessoais</legend>
+        <p>
+          <label for="inome">Nome:</label>
+          <input type="text" name="nome" id="inome" required autocomplete="name" size="40"/>
+        </p>
+        <p>
+          <label for="iemail">Email:</label>
+          <input type="email" name="email" id="iemail" required autocomplete="email" maxlength="255" size="50"/>
+        </p>
+        <p>
+          <label for="isenha">Senha:</label>
+          <input type="password" name="senha" id="isenha" required autocomplete="new-password" minlength="8" maxlength="20" size="15"/>
+        </p>
+        <p>
+            <label for="iresidem">Quantas pessoas residem na casa</label>
+            <select name="residem" id="iresidem">
+                <option value="" selected disabled hidden>Selecione</option>
+                <option value="uma">1 pessoa</option>
+                <option value="dois">2 pessoas</option>
+                <option value="tres">3 pessoas</option>
+                <option value="quatroMais">4 pessoas ou mais</option>
+            </select>
+        </p>
+      </fieldset>
+      <fieldset width="500px" style="margin: 1rem auto;font-size:18px;">
+        <legend>Preferências de produtos</legend>
+        <p>
+          <label>Produtos/Serviços ofecidos:</label><br>
+
+          <input type="checkbox" name="Ofe" id="iOvesti"/>
+            <label for="iOvesti">Venda de roupas e acessórios</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOalim_pronto"/>
+            <label for="iOalim_pronto">Venda de alimentos prontos</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOarte"/>
+            <label for="iOarte">Venda de produtos artesanais</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOcosm"/>
+            <label for="iOcosm">Venda de cosméticos</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOelet"/>
+            <label for="iOelet">Venda de eletrônicos</label><br>
+
+            <input type="checkbox" name="Ofe" id="iObele"/>
+            <label for="iObele">Serviços de beleza (cabelo, unhas, estética)</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOmanu"/>
+            <label for="iOmanu">Serviços de manutenção (elétrica, hidráulica, etc.)</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOinfo"/>
+            <label for="iOinfo">Serviços de informática</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOadmi"/>
+            <label for="iOadmi">Serviços administrativos</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOtran"/>
+            <label for="iOtran">Transporte ou entregas</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOalim"/>
+            <label for="iOalim">Alimentação (lanches, marmitas, etc.)</label><br>
+
+            <input type="checkbox" name="Ofe" id="iOoutro"/>
+            <label for="iOoutro">Outro</label>
+            <input type="text" name="toutro_especificar" id="ioutro_especificar" placeholder="Especifique outro serviço"/><br>
+          
+        </p>
+        <p>
+            <label>Atividade Principal</label><br>
+            <input type="radio" name="ativ" id="icome">
+            <label for="icome">Comércio (Venda de produtos)</label>
+
+            <input type="radio" name="ativ" id="ipres">
+            <label for="ipres">Prestação de serviços</label><br>
+
+            <input type="radio" name="ativ" id="iindu">
+            <label for="iindu">Indústria / produção artesanal</label>
+
+            <input type="radio" name="ativ" id="ialim">
+            <label for="ialim">Alimentação</label><br>
+
+            <input type="radio" name="ativ" id="itran">
+            <label for="itran">Transporte</label>
+
+            <input type="radio" name="ativ" id="itecn">
+            <label for="itecn">Tecnologia / informática</label><br>
+
+            <input type="radio" name="ativ" id="ibele">
+            <label for="ibele">Beleza e estética</label>
+
+            <input type="radio" name="ativ" id="icons">
+            <label for="icons">Construção e manutenção</label><br>
+
+            <input type="radio" name="ativ" id="ioutr">
+            <label for="ioutr">Outro</label>
+            <input type="text" name="outro_especificar" id="ioutro_especificar" placeholder="Especifique outro serviço"/><br>
+        </p>
+      </fieldset>
+      <fieldset width="500px" style="margin: 1rem auto;font-size:18px;">
+        <legend>Informações adicionais</legend>
+        <p>
+            <label for="icomen">O que mais precisamos saber?: </label><br>
+            <textarea name="comen" id="icomen"cols="100" rows="10" placeholder="Informe detalhes adicionais sobre sua atividade ou necessidades..."></textarea>
+        </p>
+      </fieldset>
+      <div align="center" style="margin: 1rem;">
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpar" />
+     </div>
+    </form>
+    <footer align="center">Feito por Vinicius Duarte Cenzi Dias</footer>
+  </body>
+</html>

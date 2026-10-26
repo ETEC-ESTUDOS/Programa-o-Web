@@ -1,0 +1,31 @@
+body{
+  background: linear-gradient(rgb(103, 103, 103), rgb(42, 38, 38));
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-items: center;
+}
+
+ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+ul li{
+  background-color: rgb(44, 44, 44);
+  height: 550px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+li .especificacao{
+  color:grey
+}
+
+ul img{
+  width: 400px;
+  height: 450px;
+}

@@ -1,0 +1,11 @@
+body { background: #0f1235; }
+
+/* altura fixa do carrossel; a imagem é cortada para preencher sem deformar */
+.carousel-item img {
+  height: 500px;
+
+  image-rendering: pixelated; /* mantém a pixel art nítida */
+}
+
+/* nas imagens da galeria também */
+img.img-fluid { image-rendering: pixelated; }

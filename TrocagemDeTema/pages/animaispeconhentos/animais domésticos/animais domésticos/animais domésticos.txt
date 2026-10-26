@@ -1,0 +1,46 @@
+
+<html>
+<head>
+<style>
+body{Background-image:url(parede.jpg);
+     Background-repeat:no-repeat;
+	 Background-size:100%;
+	 Background-attachment:fixed;}
+	 
+#texto{text-align:center;
+	  font-size:50px;
+	  color:white;
+	  width:400px; height:400px;
+	  margin:0px auto; }
+	 
+#caixa1{Background-image:url(passaro.jpg);
+     Background-repeat:no-repeat;
+	 Background-size:100% 100%;
+	 width:400px; height:400px;
+	 margin:0px 900px; }
+	 
+#caixa2{Background-image:url(passaro2.jpg);
+     Background-repeat:no-repeat;
+	 Background-size:100% 100%;
+	 width:400px; height:500px;
+	 margin:0px auto; }
+		
+#caixa3{Background-image:url(passaro3.jpg);
+     Background-repeat:no-repeat;
+	 Background-size:100% 100%;
+	 width:400px; height:500px;
+	 margin:500px auto; }
+
+
+</style>
+</head>
+<body>
+<p id="texto">um pássaro pode voar a 5000 metros de altitude.</p>
+<p id="caixa1">Pica Pau</p>
+<div id="caixa2">Pássarinho</div>
+<div id="caixa3">Passaro</div>
+</body>
+</html>
+
+
+		

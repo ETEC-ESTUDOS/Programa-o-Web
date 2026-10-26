@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diversão - Início</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS próprio -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR (igual em todas as páginas) ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🎉 Diversão</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Início</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropCategorias" role="button" data-bs-toggle="dropdown">
+              Categorias
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropCategorias">
+              <li><a class="dropdown-item" href="jogos.html">Jogos e Entretenimento</a></li>
+              <li><a class="dropdown-item" href="esportes.html">Esportes e Atividades</a></li>
+              <li><a class="dropdown-item" href="viagens.html">Viagens e Turismo</a></li>
+              <li><a class="dropdown-item" href="festas.html">Festas e Eventos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ===== FIM NAVBAR ===== -->
+
+  <div class="container conteudo">
+    <h1>Bem-vindo ao site da Diversão!</h1>
+    <p>
+      Esse site é sobre os vários jeitos que a gente tem de se divertir no dia a dia.
+      Cada pessoa curte um tipo de coisa diferente: tem gente que gosta de jogar,
+      tem gente que prefere praticar esporte, outros adoram viajar e conhecer lugares novos,
+      e tem quem ame uma boa festa com os amigos.
+    </p>
+    <p>
+      Usa o menu <strong>Categorias</strong> lá em cima pra navegar entre as páginas e
+      ver um pouco sobre cada tipo de diversão.
+    </p>
+
+    <div class="row mt-4">
+      <div class="col-md-6 text-center mb-4">
+        <img src="https://picsum.photos/seed/diversao1/400/400" class="foto rounded-circle" alt="Pessoas se divertindo">
+        <p class="legenda">Foto circular</p>
+      </div>
+      <div class="col-md-6 text-center mb-4">
+        <img src="https://picsum.photos/seed/diversao2/400/400" class="foto rounded" alt="Momento de lazer">
+        <p class="legenda">Foto com cantos arredondados</p>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <footer class="footer-dark">
+      <h2>O que você vai encontrar</h2>
+      <ul>
+        <li><a href="jogos.html">Jogos e Entretenimento</a></li>
+        <li><a href="esportes.html">Esportes e Atividades</a></li>
+        <li><a href="viagens.html">Viagens e Turismo</a></li>
+        <li><a href="festas.html">Festas e Eventos</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

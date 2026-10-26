@@ -1,0 +1,79 @@
+/* ===================================================
+   style.css - Site "Diversão"
+   Estilo escuro e simples
+   =================================================== */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e6e6e6;
+
+  /* fundo estático fixo, não rola com a página */
+  background-image:
+    linear-gradient(rgba(10, 10, 15, 0.82), rgba(10, 10, 15, 0.9)),
+    url('https://picsum.photos/1600/1000?grayscale&blur=3');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding-top: 70px; /* espaço pra navbar fixa */
+}
+
+/* navbar */
+.navbar {
+  border-bottom: 2px solid #ffb703;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.dropdown-menu-dark {
+  border: 1px solid #ffb703;
+}
+
+/* container principal de conteúdo, um pouco translúcido */
+.conteudo {
+  background-color: rgba(20, 20, 25, 0.55);
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  color: #ffb703;
+}
+
+a {
+  color: #ffca3a;
+}
+
+a:hover {
+  color: #ffe066;
+}
+
+/* imagens */
+.foto {
+  width: 100%;
+  max-width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border: 3px solid #ffb703;
+}
+
+.legenda {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-top: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.85rem;
+}

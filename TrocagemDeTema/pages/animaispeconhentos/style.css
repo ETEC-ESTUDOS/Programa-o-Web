@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.ani1,.ani2,.ani3,.ani4,.ani5,.ani6,.ani7,.ani8,.ani9{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: rgb(17, 17, 17);
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+div p{
+    width: 300px;
+}
+
+.imagem-animal{
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.ani10 {
+    width: 1570px;
+    background-color: rgb(17, 17, 17);
+    justify-content: start;
+}
+
+.ani10 img{
+    margin:0px 700px;
+}
+
+.ani10 p{
+    margin: 20px 20px;
+}
+

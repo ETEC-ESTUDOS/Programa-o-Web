@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(203deg, #000000, #1d1717);
+}
+
+
+#header {
+    /* parte superior */
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(100deg, rgb(34, 0, 0), #860000d1);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#header h1 {
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    text-shadow: #232323 2px 5px 4px;
+    font-family: 'Bebas Neue';
+}
+
+
+#menu {
+    overflow: hidden;
+    /*   overflow: hidden, oculta o menu e também evita que as barras de rolagem apareçam, mesmo quando são necessárias. */
+    background: linear-gradient(95deg, rgb(34, 0, 0), #860000d1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#menu a {
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* sem sublinhado no menu */
+    transition: 0.3s;
+}
+
+
+#menu a:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 3px 5pt rgb(0, 0, 0);
+}
+
+#menu #escTema{
+    position: relative;
+    background: linear-gradient(270deg,#ffe3ae,#2e2a4f);
+    border-radius: 30px;
+    width: 300px;
+    height: 75px;
+    overflow: hidden;
+}
+
+#menu #escTema img{
+    position: absolute;
+    left:0%;
+    height: 70px;
+    cursor:pointer;
+}
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    justify-items: center;
+    background: radial-gradient(#920000, #330000);
+    padding: 20px;
+    margin-top: 20px;
+    height: 40%;
+}
+
+.progLinguagens {
+    align-items: center;
+    justify-items: center;
+    background: linear-gradient(52deg, #292828, #920000);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.progLinguagens .indicador {
+    border-radius: 50%;
+    height: 100px;
+    align-self: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.progLinguagens .indicador:hover {
+    transform: scale(1.05);
+}
+
+.menuTecnologias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 700px;
+    padding: 10px;
+    background: linear-gradient(52deg, #292828, #920000);
+    border-radius: 10px;
+}
+
+.progLinguagens .cardTecnologia {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 400px;
+    width: 395px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.progLinguagens .cardTecnologia:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 3px 10px #000;
+}
+
+.cardTecnologia img {
+    height: 250px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    /* diz ao elemento para ser exibido como uma tabela. */
+    clear: both;
+    /* nenhum elemento flutuar no lado esquerdo e direito */
+}
+
+
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: radial-gradient(#000, #1f1f1f);
+    margin-top: 20px;
+    color: #ffd
+}
+
+.redesImages {
+    height: 40px;
+    padding-right: 20px;
+    transition: .3s;
+}
+
+.redesImages:hover {
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+@media screen and (max-width: 750px) {
+    .menuTecnologias {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .menuTecnologias {
+        grid-template-columns: 1fr;
+        width: 500px
+    }
+}
+
+@media screen and (max-width:550px) {
+    .menuTecnologias {
+        justify-items: center;
+        grid-template-columns: 1fr;
+        width: 400px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .progLinguagens {
+        padding: 5px;
+    }
+
+    .menuTecnologias {
+        width: 370px;
+        padding: 5px;
+    }
+}
+
+/* Responsivo*/
+@media screen and (max-width: 400px) {
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+@import url('fonts.css');
+
+*{
+    color:#fff;
+    text-decoration: none;
+    font-style: none;
+    list-style: none;
+}
+
+
+body{
+    background:radial-gradient(#000,#fff);
+    font-family: "Lato";
+    
+}

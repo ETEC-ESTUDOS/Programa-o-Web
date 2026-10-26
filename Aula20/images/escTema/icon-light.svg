@@ -1,0 +1,26 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD27A"/>
+      <stop offset="100%" stop-color="#F5A623"/>
+    </radialGradient>
+  </defs>
+
+  <!-- halo suave -->
+  <circle cx="32" cy="32" r="26" fill="#F5A623" opacity="0.12"/>
+
+  <!-- raios -->
+  <g stroke="#E8901A" stroke-width="3.4" stroke-linecap="round">
+    <line x1="32" y1="6"  x2="32" y2="14"/>
+    <line x1="32" y1="50" x2="32" y2="58"/>
+    <line x1="6"  y1="32" x2="14" y2="32"/>
+    <line x1="50" y1="32" x2="58" y2="32"/>
+    <line x1="13.5" y1="13.5" x2="19" y2="19"/>
+    <line x1="45"   y1="45"   x2="50.5" y2="50.5"/>
+    <line x1="13.5" y1="50.5" x2="19" y2="45"/>
+    <line x1="45"   y1="19"   x2="50.5" y2="13.5"/>
+  </g>
+
+  <!-- núcleo -->
+  <circle cx="32" cy="32" r="14" fill="url(#sunGlow)" stroke="#E8901A" stroke-width="1.5"/>
+</svg>

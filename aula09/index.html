@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2> Preencha o formulário abaixo </h2></br>
+
+    <form action="" method="post" color="red">
+
+        <fieldset width=700>
+
+            <legend>Dados Pessoais</legend>
+
+            <!-- Cor no texto e placeholder = texto explicativo do campo -->
+            <font color="red">
+                nome:
+            </font>
+
+            <input 
+                type="text" 
+                name="nome" 
+                size="40" 
+                placeholder="digite seu nome:"
+            > 
+
+            <p>
+
+            <!-- label ajuda no preenchimento, um clique leva ao campo -->
+            <label>
+                endereço:
+                <input 
+                    type="text" 
+                    name="endereco" 
+                    size="50" 
+                    placeholder="digite seu endereço"
+                >
+            </label> 
+
+            <p>
+
+            <label>
+                senha:
+                <input 
+                    type="password" 
+                    name="senha" 
+                    maxlength="3" 
+                    size="5"
+                >
+            </label>
+
+            <p>
+
+            dados confidenciais:
+            <input 
+                type="hidden" 
+                name="dados" 
+                size="120"
+            >
+
+            <p>
+
+            sexo:<br>
+
+            <input 
+                type="radio" 
+                name="sexo" 
+                value="Masc"
+            >
+            masculino<br>
+
+            <input 
+                type="radio" 
+                name="sexo" 
+                value="Fem"
+            >
+            feminino<br>
+
+            <p>
+
+            Tenho:<br>
+
+            <input 
+                type="checkbox" 
+                name="ter" 
+                value="P"
+            >
+            paciência<br>
+
+            <input 
+                type="checkbox" 
+                name="ter" 
+                value="D" 
+                checked
+            >
+            destreza<br>
+
+            <input 
+                type="checkbox" 
+                name="ter" 
+                value="A"
+            >
+            amizade
+
+            <p>
+
+            Qual seu jogo favorito?<br>
+
+            <select name="jogo">
+
+                <option value="The wall1">
+                    The wall1
+                </option>
+
+                <option value="The wall2">
+                    The wall2
+                </option>
+
+                <option value="The wall3" selected>
+                    The wall3
+                </option>
+
+                <option value="The wall4">
+                    The wall4
+                </option>
+
+            </select>
+
+            <p>
+
+            Observações<br>
+
+            <textarea 
+                name="obs" 
+                cols="60" rows="10" placeholder="texto aqui"
+            ></textarea>
+
+            <p>
+
+            <input 
+                type="submit" 
+                value="vai logo professor"
+            >
+
+            <input 
+                type="reset" 
+                value="limpar"
+            >
+
+        </fieldset>
+
+        <p>
+            <label for="inome">Nome:</label>
+
+            <input 
+                type="text" 
+                name="nome" 
+                id="inome"
+            >
+        </p>
+
+    </form>
+
+</body>
+</html>

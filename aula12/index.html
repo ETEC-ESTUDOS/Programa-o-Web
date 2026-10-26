@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario + hyperlink</title>
+    <style>
+        body{
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .nao{
+            align-items: start;
+            justify-content: start;
+            text-align: right;
+        }
+
+        form{
+            align-items: center;
+            justify-items: center;
+            text-align: center;
+        }
+        fieldset{
+            width: 400px;
+            height: 200px;
+            border-radius: 10px;
+            align-content: center;
+            justify-items: center;
+            text-align: center;
+        }
+
+        fieldset div{
+            padding: 10px 0;
+        }
+
+        #enviar{
+            width: 80px;
+            height: 20px;
+            color: white;
+            border-radius: 20px;
+            background-color: blue;
+            border-style: none;
+            transition: 0.3s;
+        }
+
+        #enviar:hover{
+            color: white;
+            height: 25px;
+            background-color: rgb(23, 23, 128);
+        }
+    </style>
+</head>
+<body>
+    <div class="nao">
+        <a href="./sjc.html">Sobre SJC...</a>
+    </div>    
+    <form action="./sjc.html" method="post" autocomplete="on">
+        <h3>Forms para entrada</h3>
+        <fieldset>
+            <div>
+                <label for="iuser">USUARIO: </label>
+                <input type="text" name="user" id="iuser" autocomplete="username">
+            </div>
+            <div>
+                <label for="isenha">SENHA: </label>
+                <input type="text" name="senha" id="isenha" autocomplete="current-password">
+            </div>
+            <input type="submit" value="Enviar" id="enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
