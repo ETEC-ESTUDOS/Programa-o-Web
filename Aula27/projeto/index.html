@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Alert</title>
+    <style>
+        body{
+            background:linear-gradient(2deg,#0000ff,#000000);
+            display: flex;
+            justify-content: center;
+            padding:7.5% 0;
+            margin:10px;
+        }
+        button{
+            background-color: blue;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 15px;
+            border-style: none;
+            transition:.5s
+        }
+        button:hover{
+            transform: scale(1.02);
+        }
+        .container{
+            margin:10px;
+            height:50vh;
+            width:30vw;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #ff8c00;
+            transition: .3s;
+        }
+        .container:hover{
+            box-shadow: 5px 5px 5px #a15900;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teste de JS</h1>
+        <button onclick="mostrar('Você clicou no primeiro botão!')">Sou o primeiro</button>
+        <button onclick="mostrar('Você clicou no segundo botão!')">Sou o segundo</button>
+    </div>
+    <script>
+        function mostrar(texto){
+            window.alert(texto)
+        }
+    </script>
+</body>
+</html>
