@@ -1,0 +1,21 @@
+<!-- id mudarTexto() e document.getElementById("titulo").innerText
+ trocar texto -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Primeiro JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Olá, Mundo!</h1>
+    <button onclick="mudarTexto()">Clique aqui</button>
+
+    <script>
+       alert("Olá! Esta é uma mensagem de alerta.")
+        // Função que altera o texto do título
+        function mudarTexto() {
+            document.getElementById("titulo").innerText = "Você clicou no botão!";
+        }
+    </script>
+</body>
+</html>
